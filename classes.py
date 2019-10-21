@@ -1,10 +1,12 @@
 students = []
+
+
 class Student:
-    def add_student(self, name, student_id=None):
+    def __init__(self, name, student_id=None):
         student = {"name": name, "student_id": student_id}
         students.append(student)
 
-student = Student()
-student.add_student("Mark")
+
+student = Student("Mark")
 
 print(students)
